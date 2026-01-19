@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Conversational AI</string>
+    <string name="download_channel_name">Model Downloads</string>
+    <string name="download_channel_description">Shows progress of AI model downloads</string>
+    <string name="downloading">Downloading</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="cancel">Cancel</string>
+    <string name="policy_title">Privacy Policy</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+</resources>
